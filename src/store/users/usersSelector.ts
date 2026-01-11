@@ -1,5 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit";
-import type { User } from "../users/usersSlice";
+import type { User } from "./usersSlice";
 
 export const users = (state: any) => state.users;
 export const teams = (state: any) => state.teams;

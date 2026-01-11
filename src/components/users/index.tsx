@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { userWithTeamName } from "../../store/selectors/teamsUsers";
+import { userWithTeamName } from "../../store/users/usersSelector";
 
 const Users = () => {
   const users = useSelector(userWithTeamName);
