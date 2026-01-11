@@ -1,7 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { fetchUsers } from './usersThunks';
 
 export interface User {
     id: string | number;
+    name: string;
+    teamId: string | number;
+    teamName?: string;
 }
 
 const usersSlice = createSlice({
@@ -14,6 +18,11 @@ const usersSlice = createSlice({
         removeUser: (state, action) => {
             return state.filter(user => user.id !== action.payload.id);
         },
+    },
+    extraReducers: (builder) => {
+        builder.addCase(fetchUsers.fulfilled, (state, action) => {
+            return action.payload;
+        });
     },
 });
 

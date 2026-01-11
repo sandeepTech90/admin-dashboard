@@ -1,9 +1,11 @@
+import Users from "../../components/users";
+import { useUsers } from "../../hooks/users";
 
-
-const Dashboard = () => {
+function Dashboard() {
+  useUsers();
   return (
-    <div>Dashboard</div>
-  )
+    <Users />
+  );
 }
 
 export default Dashboard

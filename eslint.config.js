@@ -21,6 +21,7 @@ export default defineConfig([
     },
     rules: {
       '@typescript-eslint/no-explicit-any': 'error',
+      'unused-imports/no-unused-imports': 'warn',
     },
   },
 ])
