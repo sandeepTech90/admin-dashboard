@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { userWithTeamName } from "../../store/users/usersSelector";
 
 const Users = () => {
-  const users = useSelector(userWithTeamName);
+  const users = useSelector(userWithTeamName);  
 
   return (
     <div>
