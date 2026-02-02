@@ -1,0 +1,27 @@
+.product {
+    &-row {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 8px 0;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: small;
+        width: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &-price {
+        background-color: lightgreen;
+        width: 60px;
+        font-weight: 700;
+        font-size: small;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+}

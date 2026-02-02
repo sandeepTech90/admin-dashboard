@@ -1,5 +1,4 @@
 import { flexRender, getCoreRowModel, useReactTable, type ColumnDef } from '@tanstack/react-table';
-import React from 'react'
 
 const DataTable = ({columns, data}: {columns: ColumnDef<any>[], data: any[]}) => {
     const table = useReactTable({ columns, data, getCoreRowModel: getCoreRowModel() });

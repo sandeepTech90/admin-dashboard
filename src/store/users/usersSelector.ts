@@ -13,7 +13,7 @@ export const userWithTeamName = createSelector(
         });
         return users.map((user: any) => ({
             ...user,
-            teamName: teamMap.get(user.teamId.toString()) || 'Unknown'
+            teamName: teamMap.get(user.teamId.toString()) || null
         }));
     }
 );

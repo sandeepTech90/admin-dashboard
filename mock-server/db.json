@@ -1,55 +1,39 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Amit",
       "teamId": 101
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Neha",
       "teamId": 102
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Ravi",
       "teamId": 101
     }
   ],
-
   "teams": [
     {
-      "id": 101,
+      "id": "101",
       "name": "Platform"
     },
     {
-      "id": 102,
+      "id": "102",
       "name": "Payments"
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Product A",
       "price": 29.99
     },
     {
-      "id": 2,
-      "name": "Product B",
-      "price": 49.99
-    },
-    {
-      "id": 3,
-      "name": "Product C",
-      "price": 19.99
-    },
-    {
-      "id": 4,
-      "name": "Product D",
-      "price": 99.99
-    },
-    {
-      "id": 5,
+      "id": "5",
       "name": "Product E",
       "price": 9.99
     }

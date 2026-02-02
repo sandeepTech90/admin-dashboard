@@ -1,22 +1,27 @@
 import { Provider as StoreProvider } from 'react-redux'
-import { AuthProvider } from './context/auth/auth-provider'
 import { store } from './store'
 import Header from './components/header'
-import Dashboard from './modules/dashboard'
 import './App.css'
+import { useContext } from 'react'
+import { AuthContext } from './context/auth/auth-provider'
+import { Outlet, Navigate } from 'react-router-dom'
 
 function App() {
-
+  const {state} = useContext(AuthContext) || {};
+  
   return (
-    <AuthProvider>
       <StoreProvider store={store}>
-        {/* TODO: replace below with router */}
         <div className="app">
-          <Header />
-          <Dashboard />
+          {state?.isAuthenticated ? (
+            <>
+              <Header />
+              <Outlet />
+            </>
+          ) : (
+            <Navigate to="/login" replace />
+          )}
         </div>
       </StoreProvider>
-    </AuthProvider>
   )
 }
 

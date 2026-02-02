@@ -13,7 +13,7 @@ const teamsSlice = createSlice({
         // Add team-related reducers here if needed
     },
     extraReducers: (builder) => {
-        builder.addCase(fetchTeams.fulfilled, (state, action) => {
+        builder.addCase(fetchTeams.fulfilled, (_, action) => {
             return action.payload;
         });
         // Add team-related reducers here if needed

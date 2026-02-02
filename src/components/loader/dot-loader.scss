@@ -1,0 +1,21 @@
+@keyframes dotAnimation {
+  0%, 20% {
+    content: '.';
+  }
+  40% {
+    content: '..';
+  }
+  60%, 100% {
+    content: '...';
+  }
+}
+
+.dot-loader {
+  font-weight: bold;
+  display: inline-block;
+  
+  &::after {
+    content: '.';
+    animation: dotAnimation 1.5s steps(3, end) infinite;
+  }
+}
