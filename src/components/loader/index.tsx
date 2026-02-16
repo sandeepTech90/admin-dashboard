@@ -1,9 +1,9 @@
-import {FaSpinner} from 'react-icons/fa'
+import { Loader as LoaderIcon } from 'lucide-react'
 import './loader.scss'
 
 const Loader = () => {
   return (
-    <FaSpinner className="spinner"/>
+    <LoaderIcon className="spinner" />
   )
 }
 

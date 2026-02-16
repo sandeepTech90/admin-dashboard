@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Users from "../modules/users";
 import Products from "../modules/products";
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "dashboard",
-                element: <ProtectedRoute><Outlet/></ProtectedRoute>,
+                Component: ProtectedRoute,
                 children: [
                     { path: "users", Component: Users },
                     { path: "products", Component: Products },

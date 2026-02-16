@@ -4,7 +4,7 @@ import Header from './components/header'
 import './App.css'
 import { useContext } from 'react'
 import { AuthContext } from './context/auth/auth-provider'
-import { Outlet, Navigate } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const {state} = useContext(AuthContext) || {};
@@ -18,7 +18,8 @@ function App() {
               <Outlet />
             </>
           ) : (
-            <Navigate to="/login" replace />
+            // <Navigate to="/login" replace />
+            <Outlet/>
           )}
         </div>
       </StoreProvider>

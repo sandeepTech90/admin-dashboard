@@ -14,7 +14,7 @@ const Users = () => {
     <div>
       {users.map(user => (
         <div key={user.id}>
-          <p>{user.name} - {user.teamName ? user.teamName : <DotLoader/>}</p>
+          <div>{user.name} - {user.teamName ? user.teamName : <DotLoader/>}</div>
         </div>
       ))}
     </div>
